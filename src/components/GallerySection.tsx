@@ -24,7 +24,7 @@ const GallerySection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           {photos.map((p, i) => (
-            <div key={i} className={`gallery-card aspect-[4/3] ${p.span}`}>
+            <div key={i} className={`gallery-card group aspect-[4/3] ${p.span}`}>
               <img src={p.src} alt={p.title} loading="lazy" width={800} height={600} />
               <div className="gallery-overlay">
                 <p className="font-display text-lg uppercase tracking-wider text-primary-foreground">{p.title}</p>
